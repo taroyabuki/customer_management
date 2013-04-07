@@ -20,3 +20,10 @@ customer_management
 
 1. `customer_management_preparation.sql`の`utf8`を`utf8mb4`に置換する。
 1. `database.php`の`'encoding' => 'utf8',`を`'encoding' => 'utf8mb4',`に置換する。
+
+##アンインストール
+
+最初からやり直したいときは、以下の手順でウェブアプリをアンインストールし、上述の手順1に戻ればよい。
+
+1. データベースの削除：[http://localhost/phpmyadmin/](http://localhost/phpmyadmin/) にアクセスし、「データベース」をクリック、customer_managementをチェックして削除する。「SQL」をクリックして「`DELETE DATABASE customer_management`」というSQL文を実行してもよい。
+1. ファイルの削除：`C:/xampp/htdocs/cake`を削除する。

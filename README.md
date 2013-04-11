@@ -16,7 +16,7 @@ customer_management
 
 ####Unicode追加面への対応
 
-「![𠮷](http://www.unicode.org/cgi-bin/refglyph?24-20BB7)![野](http://www.unicode.org/cgi-bin/refglyph?24-91CE)![家](http://www.unicode.org/cgi-bin/refglyph?24-5BB6)」の「![𠮷](http://www.unicode.org/cgi-bin/refglyph?24-20BB7)」のような文字を使いたい場合は、途中で以下の作業を行う（「吉」を使うのが正解ではあるが）。
+「[![𠮷](http://www.unicode.org/cgi-bin/refglyph?24-20BB7)](http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=20bb7)[![野](http://www.unicode.org/cgi-bin/refglyph?24-91CE)](http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=91CE)[![家](http://www.unicode.org/cgi-bin/refglyph?24-5BB6)](http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=5bb6)」の「[![𠮷](http://www.unicode.org/cgi-bin/refglyph?24-20BB7)](http://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=20bb7)」のような文字を使いたい場合は、途中で以下の作業を行う（「吉」を使うのが正解ではあるが）。
 
 1. `customer_management_preparation.sql`の`utf8`を`utf8mb4`に置換する。
 1. `database.php`の`'encoding' => 'utf8',`を`'encoding' => 'utf8mb4',`に置換する。

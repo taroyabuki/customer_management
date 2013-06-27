@@ -503,7 +503,7 @@ class CustomersController extends AppController {
 			$twitter_users = $this->Twitter->get(
 				$this->accessToken->key,
 				$this->accessToken->secret,
-				'http://twitter.com/statuses/user_timeline.json',
+				'https://api.twitter.com/1.1/statuses/user_timeline.json',
 				array(
 					'screen_name' => $twitter_id,
 					'include_rts' => true,

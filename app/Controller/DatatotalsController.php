@@ -212,7 +212,7 @@ class DatatotalsController extends AppController {
 				$twitter_users = $this->Twitter->post(
 					$this->accessToken->key,
 					$this->accessToken->secret,
-					'https://api.twitter.com/1/statuses/update.json',
+					'https://api.twitter.com/1.1/statuses/update.json',
 					array(
 						'status' => $tweet
 					)

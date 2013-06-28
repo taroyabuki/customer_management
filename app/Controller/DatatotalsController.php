@@ -103,10 +103,10 @@ class DatatotalsController extends AppController {
 		$pchart->drawFilledCircle(122,102,70,200,200,200);
 
 		/** ラベルに使うFont設定 */
-		$pchart->setFontProperties('/var/www/html/cake/app/Vendor/pChart/Fonts/ipagp.ttf', 8);
+		$pchart->setFontProperties(APP.'Vendor/pChart/Fonts/ipagp.ttf', 8);
 		
 		/** グラフの配色設定 */
-		$pchart->loadColorPalette('/var/www/html/cake/app/Vendor/pChart/Fonts/softtones.txt');
+		$pchart->loadColorPalette(APP.'Vendor/pChart/Fonts/softtones.txt');
 		
 		/** グラフ領域を描画 */
 		$pchart->drawBasicPieGraph(
